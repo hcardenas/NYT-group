@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Teamwork Assignment</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+
+</head>
+<body>
+<style type="text/css">
+	.panel-heading{
+    	background: #20315a!important;
+    	color: white!important;
+	}
+	.btn{
+		background-color: #777;
+		color: white;
+	}
+	
+</style>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10 ">
+			<div style="background-color: #20315a; color: white;" class="jumbotron">
+  				<h1><span class="fa fa-newspaper-o"></span> New York Times Search</h1>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<div class="panel panel-default">
+  				<div class="panel-heading"><span class="fa fa-newspaper-o"></span> Search Parameters</div>
+  					<div class="panel-body">
+						<form>
+  							<div class="form-group">
+    							<label>Search Term</label>
+   				 				<input type="email" class="form-control" id="search_term">
+  							</div>
+  							<div class="form-group">
+    							<label>Dropdown</label>
+    							<select class="form-control drop_down"> Number of Years
+  									<option>1</option>
+  									<option>5</option>
+  									<option>10</option>
+								</select>
+  							</div>
+							<div class="form-group">
+								<label>Start Year </label>
+			 					<input type="email" class="form-control" id="start_year">
+							</div>
+  							<div class="form-group">
+    							<label>End Year</label>
+    							<input type="password" class="form-control" id="end_year">
+  							</div>
+  							<button id="submit" type="submit" class="btn">Search</button>
+  							<button id="clear_submit" type="submit" class="btn">Clear Search</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		<div class="col-md-1"></div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<div class="panel panel-default">
+  				<div class="panel-heading"><span class="fa fa-newspaper-o"></span> Top Articles</div>
+  					<div class="panel-body">
+						<div id="content"></div>
+					</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>	
+	</div>
+</div>		
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="nwt.js"></script>
+</body>
+</html>
