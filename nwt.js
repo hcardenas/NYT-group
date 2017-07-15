@@ -14,9 +14,9 @@ $("#submit").on("click", function(event) {
 
 
 	var search_q ;
-	var search = $(search_term).val() ;
-	if (search === "") {
-		search_q = "fq=" + $(search_term).val() ;
+	var search = $("#search_term").val() ;
+	if (search !== "") {
+		search_q = "fq=" + $("#search_term").val() ;
 	}
 	else {
 		search_q = "Obama";
