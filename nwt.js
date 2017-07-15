@@ -42,6 +42,8 @@ $("#submit").on("click", function(event) {
 
 	var key = "&api-key=84974ac78c4444a1b6b5bff7f57c637a"
 
+
+
 	queryURL+= search_q;
 	queryURL += begin_date;
 	queryURL += end_date;
