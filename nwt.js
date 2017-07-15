@@ -10,7 +10,7 @@ $("#submit").on("click", function(event) {
 
 	$("#content").empty();
 
-	var queryURL = "http://api.nytimes.com/svc/search/v2/articlesearch.json?" ;
+	var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?" ;
 
 
 	var search_q ;
