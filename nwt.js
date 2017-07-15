@@ -73,7 +73,7 @@ $("#submit").on("click", function(event) {
 
 			 outter_div = $("<div class='panel panel-default' >");
 			 conent_div = $('<div class="panel-body" style="background-color:rgb(236, 240, 241) !important;">');
-			 headline = $("<h3>").html("<span class='label label-default' style='background-color: #20315a;'>" + (i+1) + "</span> " + res.response.docs[i].headline.print_headline);
+			 headline = $("<h4>").html("<span class='label label-default' style='background-color: #20315a;'>" + (i+1) + "</span> " + res.response.docs[i].headline.print_headline);
 			 section = $("<p>").text(res.response.docs[i].section_name);
 			 pub_date = $("<p>").text(res.response.docs[i].pub_date);
 			 print_headline = res.response.docs[i].web_url;
